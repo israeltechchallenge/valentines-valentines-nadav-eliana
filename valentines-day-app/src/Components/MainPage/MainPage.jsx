@@ -9,6 +9,9 @@ function MainPage() {
             <NavigationBar></NavigationBar>
             <BrowserRouter>
                 <Routes>
+                    <div>
+                        <FindLovePage />
+                    </div>
                     {/* <Route path="/" element={}></Route>
                     <Route path="/success-stories" element={} />
                     <Route path="/meet-the-team" element={} /> */}
