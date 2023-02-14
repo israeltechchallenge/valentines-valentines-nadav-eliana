@@ -1,4 +1,5 @@
 import './App.css';
+import AboutTheTeam from './Components/AboutheTeamPage/AboutTheTeam';
 import React, { useEffect, useState } from 'react'
 import Login from './Components/Login/Login';
 import MainPage from './Components/MainPage/MainPage';
@@ -15,11 +16,11 @@ function App() {
   }, [])
 
   return (
-    <SignedIn.Provider value={{setIsLoggedIn}}>
+    <SignedIn.Provider value={{ setIsLoggedIn }}>
       <div className="App">
         {isLoggedIn ?
-        <MainPage></MainPage> :
-        <Login></Login>}
+          <MainPage></MainPage> :
+          <Login></Login>}
       </div>
     </SignedIn.Provider>
   );
