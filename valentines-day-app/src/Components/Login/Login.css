@@ -1,0 +1,34 @@
+.login-form {
+    width: 400px;
+    height: fit-content;
+    border: solid darkblue 3px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto 0 auto;
+}
+
+.login-form > * {
+    width: 80%;
+    height: 20px;
+    margin: 20px;
+    border: lightblue 2px solid;
+    border-radius: 2px;
+}
+
+.login-btn {
+    background-color: rgb(173, 216, 230, 0.5);
+}
+
+.dropdown {
+    flex-direction: row;
+}
+
+.dropdown > * {
+    width: calc(50% - 10px);
+    height: 80%;
+}
+
+.interested {
+    text-align: right;
+}

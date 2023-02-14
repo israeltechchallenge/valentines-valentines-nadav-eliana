@@ -1,0 +1,25 @@
+.navbar {
+    width: 80%;
+    min-width: 600px;
+    height: 30px;
+    background-color: darkblue;
+    margin: auto;
+    text-align: left;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.navbar > * {
+    height: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    color: lightblue;
+    margin-left: 10px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.navbar > *:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

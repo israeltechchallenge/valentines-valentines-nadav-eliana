@@ -1,5 +1,7 @@
 import React, { useContext, useState } from "react";
+import { InterestedIn } from "../../Contexts/InterestedIn";
 import { SignedIn } from "../../Contexts/SignedIn";
+import './Login.css';
 
 function Login() {
 
@@ -7,6 +9,7 @@ function Login() {
     const [password, setPassword] = useState("");
 
     const {setIsLoggedIn} = useContext(SignedIn);
+    const {setInterestedIn} = useContext(InterestedIn);
 
     function handleLogin(e) {
         e.preventDefault();
@@ -14,11 +17,23 @@ function Login() {
         setIsLoggedIn(true);
     }
 
+    function handleInterestedIn(e) {
+        setInterestedIn(e.target.value);
+    }
+
     return (
-        <form>
+        <form className="login-form">
             <input placeholder="Enter User Name" value={userName} onChange={e => setUserName(e.target.value)}></input>
             <input placeholder="Enter Password" value={password} onChange={e => setPassword(e.target.value)}></input>
-            <button onClick={handleLogin}>Login</button>
+            <div className="dropdown">
+                <label className="interested">Interested In:</label>
+                <select className="options" onChangeCapture={handleInterestedIn}>
+                    <option value="both">Both</option>
+                    <option value="female">Females</option>
+                    <option value="male">Males</option>
+                </select>
+            </div>
+            <button className="login-btn" onClick={handleLogin}>Login</button>
         </form>
     )
 }

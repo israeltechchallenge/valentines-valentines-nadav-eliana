@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import Container from 'react-bootstrap/Container';
 import { SignedIn } from "../../Contexts/SignedIn";
+import './NavigationBar.css';
 
 function NavigationBar() {
 
@@ -14,7 +14,7 @@ function NavigationBar() {
     }
 
     return(
-        <Navbar bg='light' expand="lg">
+        <Navbar className="navbar">
                 <Nav.Link href="./">Love Stories</Nav.Link>
                 <Nav.Link href="./success-stories">Success Stories</Nav.Link>            
                 <Nav.Link href="./meet-the-team">Meet The Team</Nav.Link>      
