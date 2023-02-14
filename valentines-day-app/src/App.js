@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import Login from './Components/Login/Login';
 import MainPage from './Components/MainPage/MainPage';
 import { SignedIn } from './Contexts/SignedIn';
-import FindLovePage from './components/FindLovePage/FindLovePage';
+
 
 function App() {
 
