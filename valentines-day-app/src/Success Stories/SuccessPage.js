@@ -9,6 +9,12 @@ function SuccessPage(){
         person2: 'Seven',
         imgSrc: 'https://thumbs.dreamstime.com/b/two-hearts-wooden-background-valentine-day-wedding-love-concept-shape-white-ribbon-as-joined-couple-49015942.jpg',
         story: `6 and 7's relationship started out complicated due to fear. However, on our site, six learned more about seven's other sides, and their relationship blossomed.`
+        },
+        {
+        person1: 'Ditto',
+        person2: 'Eevee',
+        imgSrc: 'https://i.kym-cdn.com/photos/images/original/002/438/851/a08.gif',
+        story: 'Our trainers met through this site. Their relationship took off and so they left us in the day care, where we hit it off...'
         }]);
     const [storyText, setStoryText] = useState('');
     const [person1, setPerson1] = useState('');
