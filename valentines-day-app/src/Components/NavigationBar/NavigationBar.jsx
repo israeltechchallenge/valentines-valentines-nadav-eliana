@@ -14,7 +14,12 @@ function NavigationBar() {
     }
 
     return(
+<<<<<<< HEAD
         <Navbar className="navbar">
+=======
+        <Navbar bg='light' expand="lg">
+                <Nav.Link href="./find-love/">Find Love</Nav.Link>
+>>>>>>> 6055f8b62cd93e308209edfed0f91ffd4f70bfd8
                 <Nav.Link href="./">Love Stories</Nav.Link>
                 <Nav.Link href="./success-stories">Success Stories</Nav.Link>            
                 <Nav.Link href="./meet-the-team">Meet The Team</Nav.Link>      

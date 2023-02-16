@@ -1,0 +1,25 @@
+.MainContainerCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: fit-content;
+    margin: 2%;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.MainContainerCard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.34);
+}
+
+img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.descriptionCard{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
